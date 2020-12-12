@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#      YM_StatsMonitorThread.py
+#      PDF_StatsMonitorThread.py
 #       
 #       Copyright 2011 earnest gildon <egildon@TheBeast>
 #       

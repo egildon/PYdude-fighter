@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#       YM_Start.py
+#       PDF_Start.py
 #       
 #       Copyright 2011 earnest gildon <egildon@TheBeast>
 #       
@@ -29,9 +29,9 @@ import sys
 import time
 #import subprocess
 
-# from .YM_Character import *
-from . import YM_CharacterCreator
-from . import YM_Combat
+# from .PDF_Character import *
+from . import PDF_CharacterCreator
+from . import PDF_Combat
 
 #TODO: learn how to use MUTEX threads to lock the files being accessed by the thread.
 
@@ -56,9 +56,9 @@ if __name__ == "__main__":
         #launches window containing TG backend     
         print("Start")  
         #RUN CHARACTER CREATOR
-        YM_CharacterCreator.main()
+        PDF_CharacterCreator.main()
         #RUN COMBAT
-        YM_Combat.Combat()
+        PDF_Combat.Combat()
         print ("PROGRAM EXIT")  
 
     except:

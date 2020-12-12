@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#       YM_Body.py
+#       PDF_Body.py
 #       
 #       Copyright 2011 earnest gildon <egildon@TheBeast>
 #       

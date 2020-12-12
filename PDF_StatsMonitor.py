@@ -1,4 +1,4 @@
-from . import YM_Character
+from . import PDF_Character
 
 class StatsMonitor():
 

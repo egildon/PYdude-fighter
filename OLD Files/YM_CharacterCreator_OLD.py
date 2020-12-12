@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-#       YM_CharacterCreator.py
+#       PDF_CharacterCreator.py
 #
 #       Copyright 2010 earnest gildon <egildon@gmail.com>
 #
@@ -23,13 +23,13 @@
 import random
 import time
 import threading
-import YM_Character_OLD
+import PDF_Character_OLD
 from operator import itemgetter, attrgetter
 import pickle
 import os
 
 
-print ("The YM_CharacterCreator Module")
+print ("The PDF_CharacterCreator Module")
 #TODO: Add Load and save methods for character creation process
 #TODO: Create method to allow user to utilize experience points and buildpoints
 
@@ -37,18 +37,18 @@ def main():
 
     timex = 0
 
-    player2 = YM_Character.Charactor("None")
-    player1 = YM_Character.Charactor("None")
+    player2 = PDF_Character.Charactor("None")
+    player1 = PDF_Character.Charactor("None")
     # attack_order = player1,player2
 
     # Pickle the TG files #make  2 files one combat one Character
-    pickle_file1 = open("YM_Char1.tg","wb",2)#This only works with python 2
+    pickle_file1 = open("PDF_Char1.tg","wb",2)#This only works with python 2
     pickle.dump(player1,pickle_file1,)
     pickle_file1.close()
     print("\n")
     print("CHARACTERS FILES 1 SAVED")
     # Pickle the Opponent TG files
-    pickle_file2 = open("YM_Char2.tg","wb",2)
+    pickle_file2 = open("PDF_Char2.tg","wb",2)
     pickle.dump(player2,pickle_file2,)
     pickle_file2.close()
     print("\n")
@@ -56,10 +56,10 @@ def main():
 
 
     """load the attack_order TG files"""
-    #player1 = pickle.load("YM_Char1.tg")
-    #player2 = pickle.load("YM_Char2.tg")
-    player1 = open("YM_Char1.tg",'rb')
-    player2 = open("YM_Char2.tg",'rb')
+    #player1 = pickle.load("PDF_Char1.tg")
+    #player2 = pickle.load("PDF_Char2.tg")
+    player1 = open("PDF_Char1.tg",'rb')
+    player2 = open("PDF_Char2.tg",'rb')
     print("\n")
     print ("CHARACTER FILES LOADED")
 
@@ -169,13 +169,13 @@ def main():
 
 
     # Pickle the SW files
-    pickle_file1 = file("YM_Char1.tg", "w", 2)
+    pickle_file1 = file("PDF_Char1.tg", "w", 2)
     pickle.dump(player1,pickle_file1,)
     pickle_file1.close()
     print("\n")
     print("PLAYER CUSTOM CHARACTER SAVED!")
 
-    pickle_file2 = file("YM_Char2.tg", "w", 2)
+    pickle_file2 = file("PDF_Char2.tg", "w", 2)
     pickle.dump(player2,pickle_file2,)
     pickle_file2.close()
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#       YM_Character.py
+#       PDF_Character.py
 #       
 #       Copyright 2010 earnest gildon <egildon@gmail.com>
 #       
@@ -25,7 +25,7 @@ import random
 import time
 import threading
 
-print ("The YM_Character Module")
+print ("The PDF_Character Module")
 
 
 class Charactor(object):

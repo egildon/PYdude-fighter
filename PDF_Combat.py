@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#       YM_Combat.py
+#       PDF_Combat.py
 #       
 #       Copyright 2010 earnest gildon <egildon@gmail.com>
 #       
@@ -26,14 +26,14 @@
 import random
 import time
 import threading
-from . import YM_Character
+from . import PDF_Character
 from operator import itemgetter, attrgetter
 import pickle
 import re
-from . import YM_StatsMonitor#make this work with print functions
+from . import PDF_StatsMonitor#make this work with print functions
 
 
-print ("The YM_Combat Module")
+print ("The PDF_Combat Module")
 #TODO: Make the Experience points save
 #TODO: Experience Points calculator based on build points used
 #TODO: Make buildpoints save and increment
@@ -342,8 +342,8 @@ class Combat():
         return (attack_order)
 
     def _TGloads(self):
-        player1 = pickle.load(file("YM_Char1.tg"))
-        player2 = pickle.load(file("YM_Char2.tg"))
+        player1 = pickle.load(file("PDF_Char1.tg"))
+        player2 = pickle.load(file("PDF_Char2.tg"))
         attack_order = player1,player2 
         print ("PLAYER FILES LOADED") 
         print (attack_order,":from load file")
@@ -841,13 +841,13 @@ class Combat():
 
 def _TGSaves():
 
-    pickle.dump(player1,file("YM_Char1.tg","w"))
-    pickle.dump(player2,file("YM_Char2.tg","w"))
+    pickle.dump(player1,file("PDF_Char1.tg","w"))
+    pickle.dump(player2,file("PDF_Char2.tg","w"))
     print ("Character FILES SAVED") 
 
 def _TGloads():
-    player1 = pickle.load(file("YM_Char1.tg"))
-    player2 = pickle.load(file("YM_Char2.tg"))
+    player1 = pickle.load(file("PDF_Char1.tg"))
+    player2 = pickle.load(file("PDF_Char2.tg"))
     attack_order = player1,player2  
 
     print ("PLAYER FILES LOADED") 
