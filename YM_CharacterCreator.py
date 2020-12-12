@@ -39,7 +39,7 @@ print ("The YM_CharacterCreator Module")
 
 
 timex = 0
-def seriallize_player_info():
+def seriallize_player_info(player1, player2):
     timex = 0
 
     player2 = YM_Character.Charactor("None")
@@ -81,7 +81,7 @@ def load_player_files(player1, player2):
     time.sleep(timex)
 
 
-def get_players(player_number):
+def get_players(player1, player2):
     pname = input("What is your characters name?")
     if pname == "":
         print ('Name cannot be blank!')

@@ -31,7 +31,6 @@ import time
 
 # from .YM_Character import *
 from . import YM_CharacterCreator
-
 from . import YM_Combat
 
 #TODO: learn how to use MUTEX threads to lock the files being accessed by the thread.
