@@ -23,8 +23,14 @@
 import os
 import time
 from operator import itemgetter, attrgetter
-# import pickle
-import YM_Character
+import pickle
+from . import YM_Character
+from time import sleep
+
+
+
+
+
 import json
 
 print ("The YM_CharacterCreator Module")
@@ -32,6 +38,7 @@ print ("The YM_CharacterCreator Module")
 #TODO: Create method to allow user to utilize experience points and buildpoints
 
 
+timex = 0
 def seriallize_player_info():
     timex = 0
 
@@ -80,7 +87,7 @@ def get_players(player_number):
         print ('Name cannot be blank!')
         print ("Assging name")
         pname = ("The Stranger")
-    playerx.set_name(pname)# is this broken?
+    player1.set_name(pname)# is this broken?
     print ("Your Characters name is: ")
     print((player1.get_name()))
 
@@ -204,3 +211,6 @@ def get_players(player_number):
         #return 0
 
 if __name__ == '__main__':
+    # main()
+    load_player_files(get_players(1))
+    # get_players(2)

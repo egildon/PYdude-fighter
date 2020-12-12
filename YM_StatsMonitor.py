@@ -1,4 +1,4 @@
-import YM_Character
+from . import YM_Character
 
 class StatsMonitor():
 

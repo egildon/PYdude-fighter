@@ -23,7 +23,7 @@
 import random
 import time
 import threading
-import YM_Character
+import YM_Character_OLD
 from operator import itemgetter, attrgetter
 import pickle
 import os

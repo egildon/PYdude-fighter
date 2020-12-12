@@ -29,10 +29,10 @@ import sys
 import time
 #import subprocess
 
-import YM_Character
-import YM_Combat
-import YM_CharacterCreator
+# from .YM_Character import *
+from . import YM_CharacterCreator
 
+from . import YM_Combat
 
 #TODO: learn how to use MUTEX threads to lock the files being accessed by the thread.
 

@@ -26,11 +26,11 @@
 import random
 import time
 import threading
-import YM_Character
+from . import YM_Character
 from operator import itemgetter, attrgetter
 import pickle
 import re
-import YM_StatsMonitor#make this work with print functions
+from . import YM_StatsMonitor#make this work with print functions
 
 
 print ("The YM_Combat Module")
