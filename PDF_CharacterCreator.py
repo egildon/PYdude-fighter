@@ -26,6 +26,8 @@ from operator import itemgetter, attrgetter
 import pickle
 from . import PDF_Character
 from time import sleep
+import sqlite3
+import sqlalchemy
 
 
 
@@ -36,7 +38,7 @@ import json
 print ("The PDF_CharacterCreator Module")
 #TODO: Add Load and save methods for character creation process
 #TODO: Create method to allow user to utilize experience points and buildpoints
-
+#TODO: Use json/sqlite database for starage instead of pickle. 
 
 timex = 0
 def seriallize_player_info(player1, player2):

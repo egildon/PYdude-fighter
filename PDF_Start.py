@@ -33,8 +33,8 @@ import time
 from . import PDF_CharacterCreator
 from . import PDF_Combat
 
-#TODO: learn how to use MUTEX threads to lock the files being accessed by the thread.
-
+#TODO: Use Async and await for blocking
+#TODO: Convert pickles to sqlite and use  sqlalchemy
 
 
 
